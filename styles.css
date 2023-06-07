@@ -1,11 +1,20 @@
 h1, h2, h3, h4, h5, h6{
-  color: aliceblue;
   text-align: center;
 }
 
+h1{
+  color: rgb(11, 99, 30);
+}
+
+body{
+  margin: 0;
+}
+
 img{
-  max-width: 80%;
-  max-height: 80%;
+  max-width:99.9%;
+  max-height: 99.9%;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-flex-container {
@@ -16,15 +25,15 @@ img{
 }
 
 .nav-flex-container > div{
-  margin: 1.6em;
-  padding: 1em;
-  font-size: 1.5em;
+  margin: .5em;
+  padding: .5em;
+  font-size: 1.2em;
 }
 
 .info-flex-container {
   display: flex;
   flex-direction: row;
-  justify-content:left;
+  justify-content:center;
   flex-wrap: nowrap;
   background-color: #111111
 }
@@ -32,7 +41,7 @@ img{
 .info-flex-container > div{
   margin: 0.1em;
   padding: 0.1em;
-  font-size: 1.8em;
+  font-size: 1.2em;
 }
 
 a:link {
@@ -53,4 +62,19 @@ a:hover {
 a:active {
   text-decoration: underline;
   color: rgb(14, 125, 223);
+}
+
+.content {
+  padding: 1em;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.sticky + .content {
+  padding-top: 8em;
 }
